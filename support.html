@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tuner: Support</title>
+<style>
+  :root { --ink: #0a0d12; --panel: #12171f; --line: #263039; --text: #e8ebee; --dim: #7a8999; --accent: #ffb01f; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--ink); color: var(--text); font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif; }
+  main { max-width: 680px; margin: 0 auto; padding: 48px 20px 64px; }
+  .eyebrow { font: 600 12px/1 ui-monospace, Menlo, monospace; letter-spacing: .08em; color: var(--dim); }
+  h1 { font-size: 40px; letter-spacing: -1px; margin: 10px 0 6px; }
+  h2 { font-size: 19px; margin: 36px 0 8px; }
+  p, li { color: #c3cad1; }
+  code { font: 14px ui-monospace, Menlo, monospace; background: var(--panel); border: 1px solid var(--line); padding: 1px 5px; word-break: break-all; }
+  .bars { display: flex; height: 6px; margin: 24px 0 8px; }
+  .bars span { flex: 1; opacity: .5; }
+  a { color: var(--accent); }
+  .contact { margin-top: 40px; padding: 18px 20px; background: var(--panel); border: 1px solid var(--line); }
+</style>
+</head>
+<body>
+<main>
+  <div class="eyebrow">MEDIA PLAYER</div>
+  <h1>Tuner Support</h1>
+  <p>Tuner plays live TV from an M3U playlist you add. It comes with no channels, playlists or subscriptions of its own, and does not sell or recommend any.</p>
+  <div class="bars"><span style="background:#babfc4"></span><span style="background:#b3a84f"></span><span style="background:#4f99a3"></span><span style="background:#4f9161"></span><span style="background:#94508c"></span><span style="background:#a8453d"></span><span style="background:#404d8f"></span><span style="background:#14171c"></span></div>
+
+  <h2>Adding a playlist</h2>
+  <p>Paste your playlist's address into <strong>Playlist address</strong> and tap <strong>Connect</strong>. If your TV service gave you a link of the form <code>http://server:port/get.php?username=…&amp;password=…</code>, paste that whole link: Tuner then also shows the programme guide and your account's expiry and connections.</p>
+  <p>No playlist yet? <strong>Try the sample channels</strong> plays openly licensed test streams, so you can see how the app works.</p>
+
+  <h2>A channel will not play</h2>
+  <ul>
+    <li><strong>"Your provider says the account is busy"</strong>: many services allow one stream at a time. Stop playback on your other devices; Tuner retries by itself and plays as soon as the service lets go, usually within a few minutes.</li>
+    <li><strong>"No signal"</strong>: the stream stopped or never started. Tap <strong>Try again</strong>, or try another channel. If no channel plays, check the playlist still works with your service.</li>
+    <li><strong>"Couldn't load your channels"</strong>: Tuner could not reach the playlist address. Check your connection and tap <strong>Try again</strong>.</li>
+  </ul>
+
+  <h2>4K on mobile data</h2>
+  <p>When a channel turns out to be real 4K, by the picture that arrives rather than its name, Tuner asks before playing it on mobile data, since 4K uses a lot of data. You can turn this off in the menu at the top right.</p>
+
+  <h2>Picture in picture</h2>
+  <p>Tap the picture-in-picture button in the player, or leave the app while a channel plays, and the picture keeps playing in a small window over other apps.</p>
+
+  <h2>Sending a log</h2>
+  <p>If something goes wrong, the log helps. In the Files app, go to <strong>On My iPhone › Tuner › Logs</strong> and share <code>tuner.log</code> and <code>vlc.log</code> with your message. Usernames and passwords are blanked out of the logs.</p>
+
+  <div class="contact">
+    <strong>Contact</strong><br>
+    Email <a href="mailto:aberisha00@outlook.com">aberisha00@outlook.com</a>. Please include your device, iOS version and what you were watching when it happened.
+  </div>
+</main>
+</body>
+</html>
